@@ -1,0 +1,28 @@
+{% extends "mysite/header.html" %}
+{% block content %}
+<!-- <div class="container-fluid" style="background-color:#094d0e"> -->
+{% load staticfiles %}
+<center>
+<br>
+<img src="{% static 'mysite/img/profile.jpg' %}" class="responsive-img img-circle" style="max-height:100px">
+</center>
+
+<br>
+
+<!-- <div class="row" style="background-color:#094d0e">
+<div class="col-md-4 text-center"><h5><a href="#" class="btn btn-primary" role="button" target="blank">Resume</a></h5></div>
+<div class="col-md-4 text-center"><h5>
+<a href="https://in.linkedin.com/in/subhan95" target="_blank" class="btn btn-primary" role="button">LinkedIn</a></h5></div>
+<div class="col-md-4 text-center"><h5><a href="#" class="btn btn-primary" role="button">Contact</a></h5></div>
+</div> -->
+
+<p class="modified-p">Hi,I am Mohammed Subhan Khan a budding programmer and engineer.I am currently in the final year of electronics and communications engineering at the University College of Engineering,Osmania University (<a href="http://www.uceou.edu" target="_blank">UCEOU</a>).My interests include programming,algorithms and data structure,python and the Arduino development platform.In my free time I code or prototype on the Arduino Uno.</p>
+<p class="modified-p">To know more about my projects and to contact me,click any of the links given above</p>
+<p class="modified-p">Follow me on GitHub</p>
+<br>
+<!-- Place this tag where you want the button to render. -->
+<p class="modified-p"><a class="github-button" href="https://github.com/Subhan95" data-style="mega" data-count-href="/Subhan95/followers" data-count-api="/users/Subhan95#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @Subhan95 on GitHub">Follow @Subhan95</a></p>
+
+<!-- {% include "mysite/includes/programmer.html" %} -->
+
+{% endblock %}

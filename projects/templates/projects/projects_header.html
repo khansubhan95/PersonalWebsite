@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+  <title>&lt;/mohdsubhan&gt;</title>
+  {% load staticfiles %}
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+  <!-- <link rel="stylesheet" href="{% static 'mysite/css/bootstrap.min.css' %}" type = "text/css"/> -->
+  <link rel="stylesheet" href="{% static 'mysite/css/custom.css' %}" type = "text/css"/>
+  <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+  
+  <style type="text/css">
+    html,
+    body {
+      height:100%
+    }
+  </style>
+</head>
+
+<body class="body" style="background-color:#f6f6f6 margin:0">
+  <div class="container-fluid" style="min-height:95%; ">
+
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+
+<a href="/" class="navbar-brand">mohdsubhan</a>
+
+      <!-- <a class="navbar-brand">mohdsubhan</a> -->
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+      
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="https://drive.google.com/file/d/0B621iZr0p0N_MnpmVWZiMy1LWE0/view" target="_blank">Resume</a></li>
+        <li><a href="/contact">Contact</a></li>
+       
+      </ul>
+      <form class="navbar-form navbar-left">
+      </form>
+      
+ </div>
+  </div>
+</nav> 
+
+
+<div class="row">
+  <div class="column-sm-2">
+    </div>
+<div class="column-sm-10">
+    <div class='container-fluid'>
+      <br>
+      <br>
+      <br>
+         {% block content %}
+         {% endblock %} 
+      </div>
+    </div>
+  </div>
+  </div>
+
+      <footer>
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-md-4"><p><a href="https://www.linkedin.com/in/subhan95/" target="blank">LinkedIn</a> | <a href="https://www.github.com/subhan95/" target="_blank">GitHub</a> | <a href="/contact">Contact</a> |</p></div>
+  <div class="col-md-4 text-center"><p>
+  <a href="https://www.djangoproject.com/">Crafted with django</a></p></div>
+  <div class="col-md-4 text-right"><p>| <a href="">About this site</a></p></div>
+</div>
+</div>
+  </footer>
+</body>
+
+
+
+</html>
