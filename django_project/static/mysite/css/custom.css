@@ -153,3 +153,21 @@ a:focus:hover {
 .navbar-brand:hover {
     border-color: #ecf0f1;
 }
+
+.panel-footer {
+    background-color: #094d0e;
+    border-radius: 0;
+    color: #ecf0f1 ;
+}
+
+.footer-a {
+    color: #ecf0f1;
+}
+
+.footer-a:hover {
+    color: #ecf0f1;
+}
+
+.footer-a:active {
+    color: #ecf0f1;
+}
