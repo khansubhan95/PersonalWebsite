@@ -14,18 +14,15 @@
         <p>
 	<!--<a href="/projects/{{ project.id }}/" class="btn btn-default" role="button">Read more</a>-->
 	<a href="/projects/{{ project.slug }}/" class="btn btn-default" role="button">Read more</a>
-        <!-- Place this tag where you want the button to render. -->
         <br>
         <br>
-<!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/Subhan95/autopy" data-style="mega" data-count-href="/Subhan95/autopy/stargazers" data-count-api="/repos/Subhan95/autopy#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star Subhan95/autopy on GitHub">Star</a>
+<iframe src="https://ghbtns.com/github-btn.html?user=Subhan95&repo={{ project.title }}&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+
         </p>
       </div>
     </div>
   </div>
   </div>
-
-	
 		<!-- <h5>{{ project.date|date:'Y-m-d' }}<a href='/projects/{{ project.id }}/'>
 			{{ project.title }}</a></h5> -->
 	{% endfor %}
