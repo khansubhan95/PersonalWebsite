@@ -11,3 +11,6 @@ def contact(request):
 
 def about_website(request):
 	return render(request,'mysite/about_website.html',{'counter':['set_about_website']})
+
+def site_map(request):
+	return render(request,'mysite/sitemap.xml',{'counter':['set_site_map']},content_type='text/xml')
