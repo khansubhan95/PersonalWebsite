@@ -13,4 +13,5 @@ urlpatterns = patterns('',
     url(r'^projects/',include('projects.urls')),
     url(r'^about/me/',include('mysite.urls')),
     url(r'^contact/',include('mysite.urls')),
+    url(r'^sitemap.xml/',include('mysite.urls')),
 )
