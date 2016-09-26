@@ -172,6 +172,10 @@ a:focus:hover {
     color: #ecf0f1;
 }
 
+.footer-a:focus {
+    color: #ecf0f1;
+}
+
 .btn-default {
     color: #ecf0f1;
     border-color: #094d0e;
