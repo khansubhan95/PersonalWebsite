@@ -23,9 +23,9 @@ def contact(request):
 				recipient_list=['khansubhan20@yahoo.com'],\
 				fail_silently=False,)
 			if status:
-				return HttpResponse('<p>Success</p>')
+				return render(request,'mysite/contact_success.html')
 			else:
-				return HttpResponse('<p>Fail</p>')
+				return render(request,'mysite/contact_failure.html')
 	
 	return render(request,'mysite/contact.html', \
 		{'counter':['set_contact'],'form':ContactForm})

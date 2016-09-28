@@ -205,3 +205,19 @@ a:focus:hover {
     background-color: #094d0e;
     outline: none;
 }
+
+.green-a {
+    color: #094d0e;
+}
+
+.green-a:hover {
+    color: #094d0e;
+}
+
+.green-a:active {
+    color: #094d0e;
+}
+
+.green-a:focus {
+    color: #094d0e;
+}
