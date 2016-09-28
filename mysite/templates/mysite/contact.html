@@ -1,39 +1,23 @@
 {% extends "mysite/header.html" %}
 {% block content %}
+<div class="col-xs-2"></div>
 <p class="modified-p">Drop me an email at khansubhan95@gmail.com</p>
-<br>
-<br>
-<form class="form-horizontal">
-
-  <div class="form-group">
-    <label for="username" class="col-xs-2 control-label"></label>
-    <div class="col-xs-8">
-      <input type="text" maxlength="50" class="form-control" id="username" placeholder="Your name *">
-    </div>
-  </div>
-
-  <div class="form-group">
-    <label for="useremail" class="col-xs-2 control-label"></label>
-    <div class="col-xs-8">
-      <input type="email" maxlength="50" class="form-control" id="useremail" placeholder="Your email-id *">
-    </div>
-  </div>
-
-  <div class="form-group">
-    <label for="usertext" class="col-xs-2 control-label">
-    </label>
-    <div class="col-xs-8">
-      <textarea maxlength="600" class="form-control" id="usertext" placeholder="Message,Feedback" rows="8"></textarea>
-    </div>
-  </div>
-
-  <div class="form-group">
-    <div class="col-xs-offset-2 col-xs-8">
-      <button type="submit" class="btn btn-default btn-inverse">Submit</button>
-    </div>
-  </div>
-</form>
 <!-- {% for c in counter %}
 <p>{{ c }}</p>
 {% endfor %} -->
+<form class="form-horizontal" role="form" action="" method="post">
+    {% csrf_token %}
+    {% for field in form %}
+    <div class="form-group">
+    <div class="col-xs-2"></div>
+    <div class="col-xs-8">{{ field }}</div>
+    </div>
+    {% endfor %}
+    
+<div class="form-group">
+<div class="col-xs-offset-2 col-xs-8">
+<button type="submit" class="btn btn-default btn-inverse">Submit</button>
+</div>
+</div>
+</form>
 {% endblock %}
