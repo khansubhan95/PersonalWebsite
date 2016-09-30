@@ -158,6 +158,8 @@ a:focus:hover {
     background-color: #094d0e;
     border-radius: 0;
     color: #ecf0f1 ;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .footer-a {
@@ -225,4 +227,14 @@ a:focus:hover {
 .project-p {
     font-family: "Verdana","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 150%;
+}
+
+.lowest-row {
+    background-color: #002102;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.lowest-row-text {
+    color: #ecf0f1;
 }
