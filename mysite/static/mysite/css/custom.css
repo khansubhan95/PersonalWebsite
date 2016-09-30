@@ -221,3 +221,8 @@ a:focus:hover {
 .green-a:focus {
     color: #094d0e;
 }
+
+.project-p {
+    font-family: "Verdana","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 150%;
+}

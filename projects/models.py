@@ -6,6 +6,7 @@ from django.db import models
 
 class Project(models.Model):
 	title=models.CharField(max_length=140)
+	heading=models.CharField(max_length=140)
 	body=models.TextField()
 	date=models.DateTimeField()
 	slug=models.SlugField(max_length=60,blank=True)
