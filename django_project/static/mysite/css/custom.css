@@ -238,3 +238,10 @@ a:focus:hover {
 .lowest-row-text {
     color: #ecf0f1;
 }
+
+.modified-h3 {
+    font-family: "Verdana","Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #094d0e;
+}
