@@ -112,9 +112,14 @@
 
 .modified-p {
     font-family: "Verdana","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 150%;
-    padding-left: 10%;
-    padding-right: 10%;
+    font-size: 120%;
+    word-wrap: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    text-align: justify;
+
 }
 
 .img-circle {
@@ -226,7 +231,8 @@ a:focus:hover {
 
 .project-p {
     font-family: "Verdana","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 150%;
+    font-size: 120%;
+    text-align: justify;
 }
 
 .lowest-row {
@@ -241,7 +247,10 @@ a:focus:hover {
 
 .modified-h3 {
     font-family: "Verdana","Helvetica Neue",Helvetica,Arial,sans-serif;
-    padding-left: 10%;
-    padding-right: 10%;
     color: #094d0e;
+    text-align: justify;
+}
+
+h2 {
+    word-wrap: break-word;
 }
