@@ -254,3 +254,7 @@ a:focus:hover {
 h2 {
     word-wrap: break-word;
 }
+
+h3 {
+    word-wrap: break-word;
+}
