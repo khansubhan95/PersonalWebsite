@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.core.mail import send_mail
 from .forms import ContactForm
+from .models import Contact
 # Create your views here.
 
 def home(request):
@@ -15,18 +16,22 @@ def contact(request):
 			contact_name=request.POST.get('contact_name','')
 			contact_email=request.POST.get('contact_email','')
 			content=request.POST.get('content','')
-			to_be_sent=contact_name+' sent you an email from '+contact_email\
-			+' content:\n'+content
-			status=send_mail(subject='Email from viewer of your site!',\
-				message=to_be_sent,\
-				from_email=None,\
-				recipient_list=['khansubhan20@yahoo.com'],\
-				fail_silently=False,)
-			if status:
-				return render(request,'mysite/contact_success.html')
-			else:
-				return render(request,'mysite/contact_failure.html')
-	
+			#to_be_sent=contact_name+' sent you an email from '+contact_email\
+			#+' content:\n'+content
+			#status=send_mail(subject='Email from viewer of your site!',\
+			# 	message=to_be_sent,\
+			# 	from_email=None,\
+			# 	recipient_list=['khansubhan20@yahoo.com'],\
+			#	fail_silently=False,)
+			#if status:
+			# 	return render(request,'mysite/contact_success.html')
+			#else:
+			#	return render(request,'mysite/contact_failure.html')
+			try:
+				Contact.objects.create(contact_name=contact_name, contact_email=contact_email, content=content)
+				return render(request, 'mysite/contact_success.html')
+			except:
+				return render(request, 'mysite/contact_failure.html')
 	return render(request,'mysite/contact.html', \
 		{'counter':['set_contact'],'form':ContactForm})
 	# return render(request,'mysite/contact.html', {'counter':['set_contact']})
