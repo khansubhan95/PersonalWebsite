@@ -12,7 +12,7 @@ class PostManager(models.Manager):
 class Post(models.Model):
     title = models.CharField(max_length=140)
     # body = models.TextField()
-    body = MarkdownField()
+    body = models.TextField(max_length=10000) 
     date = models.DateTimeField()
     image = models.ImageField(upload_to='img/',null=True,blank=True)
     slug = models.SlugField(max_length=140, unique=True)
