@@ -14,7 +14,8 @@ class Post(models.Model):
     # body = models.TextField()
     body = models.TextField(max_length=10000) 
     date = models.DateTimeField()
-    image = models.ImageField(upload_to='img/',null=True,blank=True)
+    # image = models.ImageField(upload_to='img/',null=True,blank=True)
+    image = models.CharField(max_length=500, blank=True)
     slug = models.SlugField(max_length=140, unique=True)
     published = models.BooleanField(default=True)
 

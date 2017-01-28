@@ -6,6 +6,8 @@
                 <h3>{{ post.title }}</h3>
                 <small>{{ post.date|date:'d/m/Y' }}</small>
                 <br>
+                <img class="img-responsive" src="{{ post.image }}" />
+                <br>
                 <p>
                     <a href="/blog/{{ post.slug }}/" class="btn btn-default" role="button">Read more</a>
                     <br>
