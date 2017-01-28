@@ -1,20 +1,13 @@
-{% extends "posts/post_header.html" %}
-{% block content %}
+{% extends "posts/post_header.html" %} {% block content %}
 <img class="img-responsive" src="{{ post.image.url }}">
 <div class="row">
-<div class="col-xs-1"></div>
-<div class="col-xs-10">
-
-<h2>{{ post.title }}</h2>
-<h6>on {{ post.date }}</h6>
-{{ post.body|safe|linebreaks }}
-<br>
-<br>
+    <div class="col-xs-1"></div>
+    <div class="col-xs-10">
+        <h2>{{ post.title }}</h2>
+        <h6>on {{ post.date }}</h6> {{ post.body|safe|linebreaks }}
+        <br>
+        <br>
+    </div>
+    <div class="col-xs-1"></div>
 </div>
-<div class="col-xs-1"></div>
-</div>
-<!-- <h3>{{ project.title }}</h3>
-<h6>on {{ project.date }}</h6>
-{{ project.body|safe|linebreaks }} -->
-
 {% endblock %}

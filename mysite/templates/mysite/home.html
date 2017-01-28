@@ -1,34 +1,21 @@
-{% extends "mysite/header.html" %}
-{% block content %}
-<!-- <div class="container-fluid" style="background-color:#094d0e"> -->
-{% load staticfiles %}
+{% extends "mysite/header.html" %} {% block content %} {% load staticfiles %}
 <center>
-<img src="{% static 'mysite/img/profile.jpg' %}" class="responsive-img img-circle" style="max-height:100px">
-<br>
+    <img src="https://dl.dropboxusercontent.com/s/8nvy60981c1w77o/profile.jpg?dl=0" class="responsive-img img-circle" style="max-height:100px" alt="profile image">
+    <!-- {% static 'mysite/img/profile.jpg' %} -->
+    <br>
 </center>
 <br>
-
-<!-- <div class="row" style="background-color:#094d0e">
-<div class="col-md-4 text-center"><h5><a href="#" class="btn btn-primary" role="button" target="blank">Resume</a></h5></div>
-<div class="col-md-4 text-center"><h5>
-<a href="https://in.linkedin.com/in/subhan95" target="_blank" class="btn btn-primary" role="button">LinkedIn</a></h5></div>
-<div class="col-md-4 text-center"><h5><a href="#" class="btn btn-primary" role="button">Contact</a></h5></div>
-</div> -->
-
 <p class="modified-p">Hi,I am Mohammed Subhan Khan a budding programmer and engineering student.I am currently in the final year of electronics and communications engineering at the University College of Engineering,Osmania University (<a href="http://www.uceou.edu" target="_blank">UCEOU</a>).My interests include programming,algorithms and data structure,python and the Arduino development platform.In my free time I code or prototype on the Arduino Uno.</p>
 <h3 class="modified-h3">Internships</h3>
 <p class="modified-p">I have done an internship at Defence Electronics and Research Laboratory,Hyderabad ,where I worked on a project to analyse a hypothetical received signal using FFT.The Cooley-Tukey FFT algorithm was implemented in C and MATLAB.A correlation was also found between the radix sizes and the accuracy with which signal properties can be obtained.</p>
-
 <h3 class="modified-h3">Technical Skills</h3>
 <!-- <p class="modified-p">C,C++,Python,Verilog HDL,MATLAB,Arduino</p> -->
 <p class="modified-p">C,C++,Python,Git,SQLite,Verilog HDL,MATLAB,Arduino</p>
-
 <p class="modified-p">To know more about my projects and to contact me,click any of the links given above</p>
 <p class="modified-p">Follow me on GitHub</p>
 <br>
 <!-- Place this tag where you want the button to render. -->
-<p class="modified-p"><iframe src="https://ghbtns.com/github-btn.html?user=Subhan95&type=follow&count=true&size=large" frameborder="0" scrolling="0" width="220px" height="30px"></iframe></p>
-
-<!-- {% include "mysite/includes/programmer.html" %} -->
-
+<p class="modified-p">
+    <iframe src="https://ghbtns.com/github-btn.html?user=Subhan95&type=follow&count=true&size=large" frameborder="0" scrolling="0" width="220px" height="30px"></iframe>
+</p>
 {% endblock %}

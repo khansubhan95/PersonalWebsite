@@ -263,3 +263,15 @@ img.image-post {
   width: 100%;
   height: 768px;
 }
+
+.fa.fa-linkedin-square {
+  background-color: white;
+  color: black;
+  font-size: 110%;
+}
+
+.fa.fa-github-square {
+  background-color: white;
+  color: black;
+  font-size: 110%;
+}

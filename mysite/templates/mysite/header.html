@@ -1,118 +1,110 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="google-site-verification" content="OM06i0XCBBjE-iJZpgjDAhFmNSAFVmIbBhyKn3o9mns" />
-<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous" defer></script>
-
-<title>&lt;/mohdsubhan&gt;</title>
-{% load staticfiles %}
-
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" defer></script>
-
-<!-- <link rel="stylesheet" href="{% static 'mysite/css/bootstrap.min.css' %}" type = "text/css"/> -->
-<link rel="stylesheet" href="{% static 'mysite/css/custom.css' %}" type = "text/css"/>
-<meta name="viewport" content = "width=device-width, initial-scale=1.0">
-
-<style type="text/css">
-html,
-body {
-  height:100%
-}
-</style>
+    <meta name="google-site-verification" content="OM06i0XCBBjE-iJZpgjDAhFmNSAFVmIbBhyKn3o9mns" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous" defer></script>
+    <title>&lt;/mohdsubhan&gt;</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="{% static 'mysite/css/custom.css' %}" type="text/css" />
+    <meta name="description" content="Welcome to my personal website and blog. Know more about Python, Django, JavaScript, Web Development and Tech in general">
+    <meta name="author" content="Mohammed Subhan Khan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+    html,
+    body {
+        height: 100%
+    }
+    </style>
+    <link rel="apple-touch-icon" sizes="57x57" href="https://dl.dropboxusercontent.com/s/exs69nn5jpz9w4e/apple-icon-57x57.png?dl=0">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://dl.dropboxusercontent.com/s/00dckbl9n2knhrz/apple-icon-60x60.png?dl=0">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://dl.dropboxusercontent.com/s/yfkcupcee5k9lu5/apple-icon-72x72.png?dl=0">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://dl.dropboxusercontent.com/s/zmmvenxiqzgvfpa/apple-icon-76x76.png?dl=0">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://dl.dropboxusercontent.com/s/1le92ig02wpxp4t/apple-icon-114x114.png?dl=0">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://dl.dropboxusercontent.com/s/1l6xmq4d21qbgqc/apple-icon-120x120.png?dl=0">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://dl.dropboxusercontent.com/s/zyft45iazzdzaay/apple-icon-144x144.png?dl=0">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://dl.dropboxusercontent.com/s/8kcbaz6copqdgeg/apple-icon-152x152.png?dl=0">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://dl.dropboxusercontent.com/s/iyjinxstvqhgnc6/apple-icon-180x180.png?dl=0">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://dl.dropboxusercontent.com/s/htjneqou3d2jpuw/android-icon-192x192.png?dl=0">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://dl.dropboxusercontent.com/s/ohuy1nltlb7tp99/favicon-32x32.png?dl=0">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://dl.dropboxusercontent.com/s/q2061hfln20szxn/favicon-96x96.png?dl=0">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://dl.dropboxusercontent.com/s/qhfrp61m3iv4u1c/favicon-16x16.png?dl=0">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="https://dl.dropboxusercontent.com/s/zqom8vi2niyqc2t/ms-icon-144x144.png?dl=0">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body class="body" style="background-color:#f6f6f6 margin:0">
-
-<div class="container-fluid" style="min-height:95%; ">
-
-<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
-<div class="container-fluid">
-<div class="navbar-header">
-<button type="button" class="navbar-toggle collapsed hidden-lg-up" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-<span class="sr-only">Toggle navigation</span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-
-{% for c in counter %}
-{% if  c  == "set_home" %}
-<a class="navbar-brand">mohdsubhan</a>
-{% else %}
-<a href="/" class="navbar-brand">mohdsubhan</a>
-{% endif %}
-{% endfor %}
-
-<!-- <a class="navbar-brand">mohdsubhan</a> -->
-</div>
-
-<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-<ul class="nav navbar-nav navbar-right">
-{% for c in counter %}
-{% if  c  != "set_home" %}
-<li><a href="/">Home</a></li>
-{% endif %}
-{% endfor %}
-<li><a href="/blog">Blog</a></li>
-<li><a href="/projects">Projects</a></li>
-<li><a href="https://drive.google.com/file/d/0B621iZr0p0N_MnpmVWZiMy1LWE0/view?usp=sharing" target="_blank">Resume</a></li>
-<li><a href="/contact">Contact</a></li>
-     
-</ul>
-    
-</div>
-</div>
-</nav> 
-
-
-<div class="row">
-<div class="col-xs-1">
-</div>
-<div class="col-xs-10">
-<div class='container-fluid'>
-<br>
-<br>
-<br>
-{% block content %}
-{% endblock %} 
-</div>
-</div>
-<div class="col-xs-1">
-</div>
-</div>
-</div>
-
-<div class="panel-footer">
-<div class="container-fluid">
-
-<div class="row">
-
-<div class="col-xs-4"><p><a class="footer-a" href="https://www.linkedin.com/in/subhan95/" target="blank">LinkedIn</a> | <a class="footer-a" href="https://www.github.com/subhan95/" target="_blank">GitHub</a> | <a class="footer-a" href="/contact">Contact</a> |</p></div>
-
-<div class="col-xs-4">
-<center>
-<img src="{% static 'mysite/img/comodo_secure.png' %}" alt="SSL Certificate" title="SSL Certificate" border="0" />
-</center>
-</div>
-
-<div class="col-xs-4 text-right"><p>| <a class="footer-a" href="/about/website">About Website</a> | <a class="footer-a" href="https://github.com/Subhan95/PersonalWebsite" target="_blank">See Website Code</a></p>
-</div>
-</div>
-</div>
-</div>
-<div class="row lowest-row">
-<div class="col-xs-8"></div>
-<div class="col-xs-4 text-right"><p class="lowest-row-text"> | <a class="footer-a" href="/sitemap.xml">View Sitemap</a></p></div>
-</div>
-
-
-</div>
-</div>
+    <div class="container-fluid" style="min-height:95%; ">
+        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed hidden-lg-up" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    {% for c in counter %} {% if c == "set_home" %}
+                    <a class="navbar-brand">mohdsubhan</a> {% else %}
+                    <a href="/" class="navbar-brand">mohdsubhan</a> {% endif %} {% endfor %}
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        {% for c in counter %} {% if c != "set_home" %}
+                        <li><a href="/">Home</a></li>
+                        {% endif %} {% endfor %}
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/projects">Projects</a></li>
+                        <li><a href="https://drive.google.com/file/d/0B621iZr0p0N_MnpmVWZiMy1LWE0/view?usp=sharing" target="_blank">Resume</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-xs-1">
+            </div>
+            <div class="col-xs-10">
+                <div class='container-fluid'>
+                    <br>
+                    <br>
+                    <br> {% block content %} {% endblock %}
+                </div>
+            </div>
+            <div class="col-xs-1">
+            </div>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-4">
+                    <!-- <p><a class="footer-a" href="https://www.linkedin.com/in/subhan95/" target="blank">LinkedIn</a> | <a class="footer-a" href="https://www.github.com/subhan95/" target="_blank">GitHub</a> | <a class="footer-a" href="/contact">Contact</a> |</p> -->
+                    <p><a href="https://www.linkedin.com/in/subhan95/" target="blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a> | <a href="https://www.github.com/subhan95/" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a> | <a href="/contact"><i class="fa fa-phone" aria-hidden="true"></i></a> |</p>
+                </div>
+                <div class="col-xs-4">
+                    <center>
+                        <img src="{% static 'mysite/img/comodo_secure.png' %}" alt="SSL Certificate" title="SSL Certificate" border="0" />
+                    </center>
+                </div>
+                <div class="col-xs-4 text-right">
+                    <p>| <a class="footer-a" href="/about/website">About Website</a> | <a class="footer-a" href="https://github.com/Subhan95/PersonalWebsite" target="_blank">See Website Code</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row lowest-row">
+        <div class="col-xs-8"></div>
+        <div class="col-xs-4 text-right">
+            <p class="lowest-row-text"> | <a class="footer-a" href="/sitemap.xml">View Sitemap</a></p>
+        </div>
+    </div>
+    </div>
+    </div>
 </body>
+
 </html>
-
-

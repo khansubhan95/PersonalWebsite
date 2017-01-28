@@ -1,27 +1,22 @@
-{% extends "mysite/header.html" %}
-{% block content %}
+{% extends "mysite/header.html" %} {% block content %}
 <div class="col-xs-2"></div>
-<p class="modified-p">Drop me an email at khansubhan95@gmail.com or fill the form below to contact me</p>
-<!-- {% for c in counter %}
-<p>{{ c }}</p>
-{% endfor %} -->
+<p class="modified-p">Fill the form below to contact me</p>
 <form class="form-horizontal" role="form" action="" method="post">
-    {% csrf_token %}
-    {% for field in form %}
+    {% csrf_token %} {% for field in form %}
     <div class="form-group">
-    <div class="col-xs-2"></div>
-    <div class="col-xs-8">{{ field }}</div>
+        <div class="col-xs-2"></div>
+        <div class="col-xs-8">{{ field }}</div>
     </div>
     {% endfor %}
-<div class="form-group">
-<div class="col-xs-offset-2 col-xs-8">
-<button type="submit" class="btn btn-default btn-inverse">Submit</button>
-</p>
-</div>
-</div>
+    <div class="form-group">
+        <div class="col-xs-offset-2 col-xs-8">
+            <button type="submit" class="btn btn-default btn-inverse">Submit</button>
+            </p>
+        </div>
+    </div>
 </form>
-<br><br>
+<br>
+<br>
 <div class="col-xs-2"></div>
 <p class="modified-p">You can also find me at <a class="green-a" href="https://www.github.com/Subhan95/" target="_blank">
-GitHub</a> and <a class="green-a" href="https://www.linkedin.com/in/subhan95/" target="_blank">LinkedIn</a>
-{% endblock %}
+GitHub</a> and <a class="green-a" href="https://www.linkedin.com/in/subhan95/" target="_blank">LinkedIn</a> {% endblock %}

@@ -1,18 +1,14 @@
-{% extends "mysite/header.html" %}
-{% block content %}
-<!-- <p class="modified-p">This is the about website page<br>
-built with love using django!</p> -->
+{% extends "mysite/header.html" %} {% block content %}
 <p class="modified-p">This website was made using</p>
 <br>
 <p class="modified-p">Edit: I recently migrated the website's database from sqlite to MySQL</p>
-
-
-	<li><p class="modified-p"><a href="https://www.djangoproject.com/">django</a> The backend of the website was made using django 1.9 .I used django as I have been using python since a long time and really did not want to spend time learning other languages</p></li>
-
-	<li><p class="modified-p"><a href="https://www.getbootstrap.com/">Bootstrap</a> The frontend was made using Bootstrap v3.I did not have any kind of competence with html and css.Bootstrap helped to design how to website looked without worrying about html.The documnetation provided is really good and makes Bootstrap a must for any lightweight website</p></li>
-
-	<li><p class="modified-p"><a href="https://www.sqlite.org/">SQLite</a> I used SQLite v3 for the database.One of the advantages of django was that it interacted with the database without the user having to even touch it.What is required is appropriate configuration.SQLite apart from being included by default when you start a django project is also suitable for sites such as this one as it can handle about 100k hits/day per day</p></li>
-
-
-
+<li>
+    <p class="modified-p"><a href="https://www.djangoproject.com/">django</a> The backend of the website was made using django 1.9 .I used django as I have been using python since a long time and really did not want to spend time learning other languages</p>
+</li>
+<li>
+    <p class="modified-p"><a href="https://www.getbootstrap.com/">Bootstrap</a> The frontend was made using Bootstrap v3.I did not have any kind of competence with html and css.Bootstrap helped to design how to website looked without worrying about html.The documnetation provided is really good and makes Bootstrap a must for any lightweight website</p>
+</li>
+<li>
+    <p class="modified-p"><a href="https://www.sqlite.org/">SQLite</a> I used SQLite v3 for the database.One of the advantages of django was that it interacted with the database without the user having to even touch it.What is required is appropriate configuration.SQLite apart from being included by default when you start a django project is also suitable for sites such as this one as it can handle about 100k hits/day per day</p>
+</li>
 {% endblock %}

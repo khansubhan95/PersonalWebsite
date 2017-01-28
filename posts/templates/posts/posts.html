@@ -1,25 +1,17 @@
-{% extends "posts/posts_header.html" %}
-{% block content %}
-	{% for post in object_list %}
+{% extends "posts/posts_header.html" %} {% block content %} {% for post in object_list %}
 <div class="row">
-  <div class="col-xs-12">
-    <div class="thumbnail">
-      <!-- <img src="..." alt="..."> -->
-      <div class="caption">
-        <h3>{{ post.title }}</h3>
-        <small>{{ post.date|date:'d/m/Y' }}</small>
-        <br>
-        <p>
-	<!--<a href="/projects/{{ project.id }}/" class="btn btn-default" role="button">Read more</a>-->
-	<a href="/blog/{{ post.slug }}/" class="btn btn-default" role="button">Read more</a>
-        <br>
-        </p>
-      </div>
+    <div class="col-xs-12">
+        <div class="thumbnail">
+            <div class="caption">
+                <h3>{{ post.title }}</h3>
+                <small>{{ post.date|date:'d/m/Y' }}</small>
+                <br>
+                <p>
+                    <a href="/blog/{{ post.slug }}/" class="btn btn-default" role="button">Read more</a>
+                    <br>
+                </p>
+            </div>
+        </div>
     </div>
-  </div>
-  </div>
-		<!-- <h5>{{ project.date|date:'Y-m-d' }}<a href='/projects/{{ project.id }}/'>
-			{{ project.title }}</a></h5> -->
-	{% endfor %}
-	
-{% endblock %}
+</div>
+{% endfor %} {% endblock %}
