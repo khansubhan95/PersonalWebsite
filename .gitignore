@@ -1,0 +1,14 @@
+.env
+*.sqlite3
+*.sublime-*
+sftp-config.json
+*.pyc
+*.pye
+*.pot
+*.log
+__pycache__/
+local_settings.py
+media
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
