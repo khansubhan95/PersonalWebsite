@@ -12,3 +12,4 @@ media
 *.tmlanguage.cache
 *.tmPreferences.cache
 *.stTheme.cache
+*.bfg-report
