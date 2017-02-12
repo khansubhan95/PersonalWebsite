@@ -8,7 +8,7 @@ Code of my personal website
 
 ###Installation
 ```
-pip install Django==1.7
+pip install -r requirements.txt
 ```
 
 Run the following in a folder named django_project
