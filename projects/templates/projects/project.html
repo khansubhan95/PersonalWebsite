@@ -1,14 +1,10 @@
 {% extends "projects/projects_header.html" %} {% block content %}
 <div class="row">
-    <div class="col-xs-1"></div>
-    <div class="col-xs-10">
-        <h2>{{ project.title }}</h2>
-        <h3>{{ project.heading }}</h3>
-        <h6>on {{ project.date }}</h6> {{ project.body|safe|linebreaks }}
-        <br>
-        <br>
-        <iframe src="https://ghbtns.com/github-btn.html?user=Subhan95&repo={{ project.title }}&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
-    </div>
-    <div class="col-xs-1"></div>
+    <h2>{{ project.title }}</h2>
+    <h3>{{ project.heading }}</h3>
+    <h6>on {{ project.date }}</h6> {{ project.body|safe|linebreaks }}
+    <br>
+    <br>
+    <iframe src="https://ghbtns.com/github-btn.html?user=Subhan95&repo={{ project.title }}&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
 </div>
 {% endblock %}

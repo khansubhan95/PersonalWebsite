@@ -1,19 +1,17 @@
 {% extends "posts/posts_header.html" %} {% block content %} {% for post in object_list %}
-<div class="row">
-    <div class="col-xs-12">
-        <div class="thumbnail">
-            <div class="caption">
-                <h3>{{ post.title }}</h3>
-                <small>{{ post.date|date:'d/m/Y' }}</small>
-                <br>
-                <img class="img-responsive" src="{{ post.image }}" />
-                <br>
-                <p>
-                    <a href="/blog/{{ post.slug }}/" class="btn btn-default" role="button">Read more</a>
-                    <br>
-                </p>
-            </div>
+<div class="thumbnail">
+    <div class="caption">
+        <h3>{{ post.title }}</h3>
+        <small>{{ post.date|date:'d/m/Y' }}</small>
+        <br>
+        <div class="img-container">
+        <img class="img-responsive" src="{{ post.image }}" />
         </div>
+        <br>
+        <p>
+            <a href="/blog/{{ post.slug }}/" class="btn btn-default" role="button">Read more</a>
+            <br>
+        </p>
     </div>
 </div>
 {% endfor %} {% endblock %}

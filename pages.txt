@@ -1,0 +1,9 @@
+Headers:
+
+mysite/header.html
+404.html
+mysite/contact_success.html
+mysite/contact_failure.html
+projects/projects_header.html
+posts/posts_header.html
+posts/post_header.html
