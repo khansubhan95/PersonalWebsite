@@ -3,9 +3,9 @@ from __future__ import unicode_literals
 from django.db import models
 
 # Create your models here.
-class PostManager(models.Manager):
+class ProjectManager(models.Manager):
     def active(self, *args, **kwargs):
-        return super(PostManager, self).filter(published=True)
+        return super(ProjectManager, self).filter(published=True)
 
 class Project(models.Model):
 	title=models.CharField(max_length=140)
@@ -15,7 +15,7 @@ class Project(models.Model):
 	slug=models.SlugField(max_length=60,blank=True)
         published = models.BooleanField(default=True)
 
-        objects = PostManager()
+        objects =ProjectManager()
 
 	def __str__(self):
 		return self.title
