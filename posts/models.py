@@ -11,12 +11,19 @@ class PostManager(models.Manager):
 
 class Post(models.Model):
     title = models.CharField(max_length=140)
-    # body = models.TextField()
-    body = models.TextField(max_length=10000) 
+    # body = models.TextField(max_length=10000) 
     date = models.DateTimeField()
+    '''
+    image with image field
+    '''
     # image = models.ImageField(upload_to='img/',null=True,blank=True)
+
+    '''
+    image with url
+    '''
     image = models.CharField(max_length=500, blank=True)
-    slug = models.SlugField(max_length=140, unique=True)
+    # slug = models.SlugField(max_length=140, unique=True)
+    link = models.CharField(max_length=200)
     published = models.BooleanField(default=True)
 
     objects = PostManager()
