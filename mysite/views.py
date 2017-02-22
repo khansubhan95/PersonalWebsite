@@ -3,10 +3,12 @@ from django.http import HttpResponse
 from django.core.mail import send_mail
 from .forms import ContactForm
 from .models import Contact
+from posts.models import Post
 # Create your views here.
 
 def home(request):
-	return render(request,'mysite/home.html',{'counter':['set_home']})
+	queryset = Post.objects.filter(published=True).order_by("-date")[:2]
+	return render(request,'mysite/home.html',{'posts': queryset})
 	# return HttpResponse('<h2>This is the home page</h2>')
 
 def contact(request):
@@ -35,6 +37,9 @@ def contact(request):
 	return render(request,'mysite/contact.html', \
 		{'counter':['set_contact'],'form':ContactForm})
 	# return render(request,'mysite/contact.html', {'counter':['set_contact']})
+
+def about(request):
+	return render(request, 'mysite/about.html', {'counter':['set_about']})
 
 def about_website(request):
 	return render(request,'mysite/about_website.html',{'counter':['set_about_website']})

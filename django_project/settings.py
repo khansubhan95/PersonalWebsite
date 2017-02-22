@@ -32,7 +32,6 @@ ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 INSTALLED_APPS = (
     'mysite',
-    'projects',
     'posts',
     'django_markdown',
     'django.contrib.admin',
