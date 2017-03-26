@@ -1,12 +1,12 @@
-#Personal Website
+# Personal Website
 Code of my personal website
 
-##Getting Started
-###Prerequisites
+## Getting Started
+### Prerequisites
 1. [Python 2.7.6](https://www.python.org/)
 2. [MySQL](https://www.mysql.com)
 
-###Installation
+### Installation
 ```
 pip install -r requirements.txt
 ```
@@ -34,7 +34,7 @@ Run the development server
 python manage.py runserver
 ```
 
-##Builtwith
+## Builtwith
 1. [Django 1.7](https://www.djangoproject.com/)
 2. [MySQL](https://www.mysql.com)
 3. [Bootstrap](http://getbootstrap.com/)

@@ -13,3 +13,5 @@ media
 *.tmPreferences.cache
 *.stTheme.cache
 *.bfg-report
+skills.list
+skills.todo
